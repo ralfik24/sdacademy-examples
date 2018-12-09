@@ -1,8 +1,4 @@
-package pl.sdacademy;
-
-import pl.sdacademy.annotations.MyClassAnnotation;
-import pl.sdacademy.annotations.MyFieldAnnotation;
-import pl.sdacademy.annotations.MyMethodAnnotation;
+package pl.sdacademy.annotations;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

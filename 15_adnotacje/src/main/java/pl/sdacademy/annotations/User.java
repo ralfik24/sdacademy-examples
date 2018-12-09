@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.annotations;
 
 import pl.sdacademy.annotations.MyClassAnnotation;
 import pl.sdacademy.annotations.MyFieldAnnotation;
