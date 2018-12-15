@@ -4,11 +4,15 @@ package pl.sdacademy.downloader;
 import java.io.InputStream;
 import java.util.Scanner;
 
+
+
 public class CommandLineRunner {
 	private URLDownloader downloader;
+	private Executor executor;
 
-	public CommandLineRunner(URLDownloader downloader) {
+	public CommandLineRunner(URLDownloader downloader, Executor executor) {
 		this.downloader = downloader;
+		this.executor = executor;
 	}
 
 	void run(InputStream inputStream) {
@@ -31,10 +35,14 @@ public class CommandLineRunner {
 	}
 
 	private void dowloadURL(String command) {
-		Thread thread = new Thread(() -> downloader.download(command));
-		thread.start();
+		executor.execute(() -> downloader.download(command), () -> {
+			System.out.println("File downloaded");
+
+
+		});
 	}
 }
+
 
 
 
