@@ -17,7 +17,7 @@ public class CaltulatorTest {
 		Assertions.assertThat(wynik).isEqualTo(0);
 	}
 
-
+	@DisplayName("given number 1")
 	@Test
 	public void test0() {
 		//given
@@ -28,6 +28,7 @@ public class CaltulatorTest {
 		Assertions.assertThat(wynik).isEqualTo(1);
 	}
 
+	@DisplayName("given number 2 ")
 	@Test
 	public void test1() {
 		//given
@@ -48,4 +49,41 @@ public class CaltulatorTest {
 		//then
 		Assertions.assertThat(wynik).isEqualTo(7);
 	}
+
+	@Test
+	public void testMoreElements() {
+		//given
+		String text = "2,5,1,7,9";
+		//when
+		int wynik = Calculator.add(text);
+		//then
+		Assertions.assertThat(wynik).isEqualTo(24);
+	}
+
+	@Test
+	public void testDelimeter() {
+		//given
+		String text = "1\n2,3";
+		//when
+		int wynik = Calculator.add(text);
+		//then
+		Assertions.assertThat(wynik).isEqualTo(6);
+	}
+
+
+
+	@Test
+	public void testDelimeter1() {
+		//given
+		String text = "//;\\n1;2";
+		//when
+		int wynik = Calculator.add(text);
+		//then
+		Assertions.assertThat(wynik).isEqualTo(3);
+
+	}
 }
+
+
+
+
