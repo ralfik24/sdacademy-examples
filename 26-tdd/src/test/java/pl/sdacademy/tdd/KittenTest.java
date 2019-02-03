@@ -1,5 +1,8 @@
 package pl.sdacademy.tdd;
 
-public class KittenTest {
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
+public class KittenTest {
 }
+
