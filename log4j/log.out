@@ -1,0 +1,6 @@
+16 gru 2018 13:55:38,031 :: [main] INFO  pl.sdacademy.logger.LoggerTest - This is info log
+16 gru 2018 13:55:38,078 :: [main] DEBUG pl.sdacademy.logger.LoggerTest - This is debug message
+16 gru 2018 13:57:07,109 :: [main] INFO  pl.sdacademy.logger.LoggerTest - This is info log
+16 gru 2018 13:57:07,109 :: [main] DEBUG pl.sdacademy.logger.LoggerTest - This is debug message
+16 gru 2018 14:10:50,961 :: [main] INFO  pl.sdacademy.logger.LoggerTest - This is info log
+16 gru 2018 14:10:50,961 :: [main] DEBUG pl.sdacademy.logger.LoggerTest - This is debug message
