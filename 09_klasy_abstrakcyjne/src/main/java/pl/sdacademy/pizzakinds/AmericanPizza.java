@@ -15,5 +15,6 @@ public class AmericanPizza extends Pizza {
         System.out.println("Amerykańska pizza o rozmiarze "
             + getRozmiar() + " ma " + getIleSera()
             + ", jest gruba na " + grubosc + "cm");
+
     }
 }
